@@ -1,0 +1,20 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: '0 9 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Push your slides and close this issue please.'
+        days-before-close: -1
+        days-before-stale: 10
