@@ -73,3 +73,8 @@ DAFL은 의미 기반 연관성 점수와 선별적 커버리지 정보의 유�
 그러나 DAFL은 정의-사용 관계 분석을 통해 목표 지점과 연관된 프로그램 지점들을 파악하였고, 이를 각각 입력의 점수 (의미 기반 연관성 점수)와
 커버리지 정보 수집의 기준 (선별적 커버리지 정보)에 활용하였다.
 기존 지향성 퍼저들과 비교하여 DAFL은 41개의 실제 결함을 재현하는 실험에서 최소 1.93 배 빠르게 목표 결함을 재현하였다.
+
+## 관련 자료
+- [논문](https://prosys.kaist.ac.kr/publications/sec23.pdf)
+- [발표 자료](https://prosys.kaist.ac.kr/publications/sec23-slides.pdf)
+- [발표 영상](https://www.youtube.com/watch?v=GLYDGX3tcUY)

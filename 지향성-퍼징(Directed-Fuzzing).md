@@ -61,7 +61,10 @@ Beacon은 우선 프로그램 분석을 통해 각 프로그램 지점에서 목
 그리고 입력의 실행 시 그 조건을 만족하지 못한다면 굳이 더 볼 필요가 없으니 미리 프로그램을 종료하는 것이다.
 이것은 위의 변형기반 반투명 퍼징의 순서에서 3번 단계를 건드리는 것이다.
 
-이 둘의 공통점은 동적으로 프로그램을 검사하는 대표적인 기법인 퍼징에 프로그램 분석, 즉 정적으로 프로그램을 검사하는 기법을 적용했다는 점이다.
+- DAFL<sup>[7](#DAFL)</sup>:
+[관련 문서](https://github.com/prosyslab/pl-wiki/wiki/DAFL) 참고.
+
+이 도구들의 공통점은 동적으로 프로그램을 검사하는 대표적인 기법인 퍼징에 프로그램 분석, 즉 정적으로 프로그램을 검사하는 기법을 적용했다는 점이다.
 
 
 ## 지향성 퍼징 분야의 문제점
@@ -98,3 +101,5 @@ Beacon은 우선 프로그램 분석을 통해 각 프로그램 지점에서 목
 [<a name="AFLGo">5</a>] "Directed Greybox Fuzzing", Bohme et al., CCS 2017
 
 [<a name="Beacon">6</a>] "BEACON : Directed Grey-Box Fuzzing with Provable Path Pruning", Huang et al., S&P 2022
+
+[<a name="DAFL">7</a>] "DAFL : Directed Grey-Box Fuzzing Guided by Data Dependency", Kim et al., USENIX Security 2023
