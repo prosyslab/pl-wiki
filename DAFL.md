@@ -77,4 +77,4 @@ DAFL은 의미 기반 연관성 점수와 선별적 커버리지 정보의 유�
 ## 관련 자료
 - [논문](https://prosys.kaist.ac.kr/publications/sec23.pdf)
 - [발표 자료](https://prosys.kaist.ac.kr/publications/sec23-slides.pdf)
-- [발표 영상](https://www.youtube.com/watch?v=GLYDGX3tcUY)
+- [발표 영상](https://www.youtube.com/watch?v=BjtKhyzLtyo)
