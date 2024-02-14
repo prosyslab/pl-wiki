@@ -72,7 +72,7 @@ Beacon은 우선 프로그램 분석을 통해 각 프로그램 지점에서 목
 ## 5. 지향성 퍼징 도구의 평가 시 주의점
 자세한 내용은 [지향성 퍼징 도구 평가](https://github.com/prosyslab/pl-wiki/wiki/지향성-퍼징-도구-평가) 문서를 참고.
 
-## 각주
+## 6. 각주
 
 [<a name="fuzzing_begin">1</a>] https://www.cs.wisc.edu/2021/01/14/the-trials-and-tribulations-of-academic-publishing-and-fuzz-testing/
 
