@@ -47,17 +47,9 @@
 ## 6. 번역 검산기의 예
 1. Alive2<sup>[2](#alive2)</sup>: LLVM 최적화기를 대상으로 하는 번역 검산기. 원본 언어와 대상 언어 모두 LLVM의 중간 언어이다. LLVM 중간 언어를 일차 논리식으로 변환해주는 변환기, 충족 가능성 문제 (SMT, Satisfiability Modulo Theorem)를 해결해주는 Z3를 증명기로 하여 구성되었다.
 
-2. TurboTV<sup>[3](#TurboTV)</sup>: V8 자바스크립트 엔진의 JIT 컴파일러인 TurboFan을 대상으로 하는 번역 검산기.
-해당 시스템은 TurboFan 중간 언어 프로그램을 대상으로 하며, TurboFan의 올바른 최적화를 위해서 특정 최적화 전후 중간 언어 프로그램의 의미가 같은지 검사한다. 
-만약 최적화 전후 프로그램의 의미가 같다면 해당 최적화가 프로그램의 의미를 보존하는, 올바른 최적화라는 것을 알 수 있다. 
-TurboTV는 무작위로 생성된 196,000개의 자바스크립트 코드 대상의 번역 검산에서 전체의 90%를 <b>1초</b> 이내에 완료하고 <b>1%</b>의 오탐만을 발생시키며 매우 우수한 성능을 보여주었다.  
+2. TurboTV<sup>[3](#TurboTV)</sup>: V8 자바스크립트 엔진의 JIT 컴파일러인 TurboFan을 대상으로 하는 번역 검산기. TurboFan 중간 언어 프로그램을 대상으로 하며, TurboFan의 올바른 최적화를 위해서 특정 최적화 전후 중간 언어 프로그램의 의미가 같은지 검사한다.
+자세한 내용은 [TurboTV](https://github.com/prosyslab/pl-wiki/wiki/TurboTV) 참고.
 
-    TurboTV의 용례는 다음과 같다. 
-    * TurboTV와 퍼징의 결합: TurboTV는 퍼징과 결합하여 다양한 TurboFan의 최적화를 검사할 수 있다. 퍼저가 무작위 자바스크립트 코드를 생성하면, TurboTV는 TurboFan이 해당 코드를 컴파일하는 과정에서 최적화가 올바르게 일어나는지 검사할 수 있다. 기존 퍼저들은 프로그램의 충돌만으로 소프트웨어의 버그를 탐지하지만, TurboTV는 컴파일러의 잘못된 최적화같이 더 넓은 범위의 버그를 탐지할 수 있다.
-
-    * 교차 언어 번역 검산: TurboTV는 Alive2와 결합하여 LLVM에서 TurboFan으로 이어지는 두 컴파일러에 걸친 과정을 번역 검산할 수 있다. LLVM은 LLVM 중간 언어를 웹어셈블리(Wasm)으로, TurboFan은 Wasm을 TurboFan 중간 언어로 번역할 수 있다. 그렇기에 두 번역 검산기를 활용한다면 같은 언어에서 이루어지는 최적화 뿐만이 아니라 다른 언어(Wasm)로 번역하는 과정까지 번역 검산을 할 수 있게 된다. TurboTV는 교차 언어 번역 검산을 통해서 LLVM의 백엔드에서 실제 [버그](https://github.com/llvm/llvm-project/issues/63388)를 발견하였다.  
-
-    자세한 내용은 [TurboTV 홈페이지](https://prosys.kaist.ac.kr/turbo-tv/)와 [논문](https://prosys.kaist.ac.kr/publications/icse24.pdf)에서 확인할 수 있다.
 
 ## 7. 참고 문서
 [<a name="tv">1</a>] ["Translation Validation", A. Pneuli, M. Siegel, E. Singerman, TACAS 1998](https://link.springer.com/content/pdf/10.1007/BFb0054170.pdf)
