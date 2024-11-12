@@ -133,4 +133,4 @@ DAFL과 함께 우린 목표에 닿아
 ```
 
 그 후, [Suno](https://suno.com/)라는 웹사이트에서 앞서 생성한 가사를 입력으로 주제곡 음원을 생성했다.
-생성된 음원은 [여기](https://suno.com/song/fd17ca70-89cf-446a-941c-60c33ef04b9c)에서 확인할 수 있다.
+생성된 음원은 [유튜브](https://www.youtube.com/watch?v=tI6umHgKTL8)에서 확인할 수 있다.
