@@ -94,13 +94,13 @@ Optimuzz는 LLVM에서 알려진 오번역 버그 24개 중 23개를 기존 도�
 또한, Optimuzz는 LLVM 최신 버전에서 57개의 새로운 오번역 버그를 발견하였으며 이를 LLVM 개발진에게 보고하였다.
 지금까지 22개의 버그가 수정되었으며, 이는 Optimuzz가 실제로 컴파일러에서 버그를 찾는 데 실용적인 프레임워크임을 입증한다.
 
-## 결론
+## 7. 결론
 
 Optimuzz는 지향성 퍼징과 번역 검산을 효과적으로 결합하여, 지속적으로 변화하는 복잡한 현대 컴파일러의 최적화 올바름을 검사하는 새로운 프레임워크이다.
 특정 최적화 규칙을 목표로 입력을 생성하고 검증함으로써, 기존 방식들의 한계를 극복하고 오번역 버그를 효율적으로 탐지한다.
 LLVM과 TurboFan에서의 실험 결과는 Optimuzz의 우수한 성능과 실용성을 보여주며, 컴파일러 개발 과정의 안정성을 높이는 데 기여할 수 있음을 시사한다.
 
-## 관련 자료
+## 8. 관련 자료
 
 - **논문:** [Optimization-Directed Compiler Fuzzing for Continuous Translation Validation (PLDI 2025)](https://prosys.kaist.ac.kr/publications/pldi25.pdf)
 - **프로젝트 웹사이트:** [https://prosys.kaist.ac.kr/optimuzz](https://prosys.kaist.ac.kr/optimuzz)
