@@ -66,6 +66,9 @@ Beacon은 우선 프로그램 분석을 통해 각 프로그램 지점에서 목
 - DAFL<sup>[7](#DAFL)</sup>:
 [관련 문서](https://github.com/prosyslab/pl-wiki/wiki/DAFL) 참고.
 
+- Optimuzz<sup>[8](#Optimuzz)</sup>:
+[관련 문서](https://github.com/prosyslab/pl-wiki/wiki/Optimuzz) 참고.
+
 이 도구들의 공통점은 동적으로 프로그램을 검사하는 대표적인 기법인 퍼징에 프로그램 분석, 즉 정적으로 프로그램을 검사하는 기법을 적용했다는 점이다.
 
 
@@ -87,3 +90,5 @@ Beacon은 우선 프로그램 분석을 통해 각 프로그램 지점에서 목
 [<a name="Beacon">6</a>] "BEACON : Directed Grey-Box Fuzzing with Provable Path Pruning", Huang et al., S&P 2022
 
 [<a name="DAFL">7</a>] "[DAFL : Directed Grey-Box Fuzzing Guided by Data Dependency](https://prosys.kaist.ac.kr/publications/sec23.pdf)", Kim et al., USENIX Security 2023
+
+[<a name="Optimuzz">8</a>] "[Optimuzz: Optimization-Directed Compiler Fuzzing for Continuous Translation Validation](https://prosys.kaist.ac.kr/publications/pldi25.pdf)", Kwon et al., PLDI 2025

@@ -50,6 +50,11 @@
 2. TurboTV<sup>[3](#TurboTV)</sup>: V8 자바스크립트 엔진의 JIT 컴파일러인 TurboFan을 대상으로 하는 번역 검산기. TurboFan 중간 언어 프로그램을 대상으로 하며, TurboFan의 올바른 최적화를 위해서 특정 최적화 전후 중간 언어 프로그램의 의미가 같은지 검사한다.
 자세한 내용은 [TurboTV](https://github.com/prosyslab/pl-wiki/wiki/TurboTV) 참고.
 
+## 7. 번역 검산기를 사용하는 예
+
+1. - Optimuzz<sup>[4](#Optimuzz)</sup>: 컴파일러 최적화에 지향성 퍼징을 결합해 번역 검산을 위한 입력 프로그램을 생성하는 프레임워크. 목표 최적화를 실행하는 입력 프로그램을 생성해 최적화의 올바름을 검사한다.
+자세한 내용은 [Optimuzz](https://github.com/prosyslab/pl-wiki/wiki/Optimuzz) 참고.
+
 
 ## 7. 참고 문서
 [<a name="tv">1</a>] ["Translation Validation", A. Pneuli, M. Siegel, E. Singerman, TACAS 1998](https://link.springer.com/content/pdf/10.1007/BFb0054170.pdf)
@@ -59,3 +64,5 @@
 [<a name="TurboTV">3</a>] ["Translation Validation for JIT Compiler in the V8 JavaScript Engine",
 Seungwan Kwon, Jaeseong Kwon, Wooseok Kang, Juneyoung Lee, Kihong Heo,
 ICSE 2024](https://prosys.kaist.ac.kr/publications/icse24.pdf)
+
+[<a name="Optimuzz">4</a>] "[Optimuzz: Optimization-Directed Compiler Fuzzing for Continuous Translation Validation](https://prosys.kaist.ac.kr/publications/pldi25.pdf)", Kwon et al., PLDI 2025
