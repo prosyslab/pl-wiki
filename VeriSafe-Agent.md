@@ -146,7 +146,12 @@ searchButton.VSAOnClickListener (() -> {
 **VeriSafe Agent**는 스스로 외부 도구를 사용하며 현실 세계에 영향을 미치는 AI 에이전트의 안전성을 확보하기 위해, 세계 최초로 제안된 **논리 기반 에이전트 행동 검증 시스템**이다.
 본 시스템은 언어 모델에 의존하는 기존 검증 방식의 한계를 극복하고, 신뢰성과 비용 효율 측면에서 모두 크게 앞서는 결과를 보였다.
 
-## 6. 참고 문헌
+## 6. 관련 자료
+
+- [논문](https://dl.acm.org/doi/10.1145/3680207.3765248)
+- [GitHub](https://github.com/VeriSafeAgent)
+
+## 7. 참고 문헌
 
 - [<a id="verisafe_agent">1</a>]: Jungjae et al., 2025, "Safeguarding Mobile GUI Agent via Logic-based Action Verification", Annual International Conference On Mobile Computing And Networking
 - [<a id="macdonalds_agent">2</a>]: Nick Robins-Early, 2024.06.17 "McDonald’s ends AI drive-thru trial as fast-food industry tests automation"
