@@ -151,6 +151,10 @@ LLM이 "이 명령을 실행하겠다" 또는 "이 파일을 수정하겠다"고
    코딩 에이전트가 작업 목록에 따라 코드를 수정하고 테스트를 실행한다.
    테스트가 실패하면 실패 로그를 다시 읽고, 명세와 구현이 어긋난 부분을 찾아 수정한다.
 
+하지만 테스트 케이스 만으로 명세와 코드가 일치하는지 보장하는 것은 불가능하며, 자연어로 작성된 명세와 구현이 일치하는지 검증하는 책임은 사람에게 있다.
+신뢰할 수 있는 코딩 에이전트는 자연어 요구사항을 엄밀한 명세(formal specification)로 바꾸고 그 명세를 기준으로 구현을 검증해야 한다.
+[Expecto](https://github.com/prosyslab/pl-wiki/wiki/Expecto)는 이 문제를 해결하는 도구로, 자연어 요구사항을 엄밀한 명세로 변환해 엄밀한 검증(formal verification)을 가능하게 해준다.
+
 ## 참고 문헌
 
 - [<a id="tau_bench">1</a>] Yao, S., et al. (2024). _τ-bench: A benchmark for tool-agent-user interaction in real-world domains_. arXiv:2406.12045
